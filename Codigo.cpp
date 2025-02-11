@@ -10,12 +10,10 @@ public:
 	void setDato(T Valor);
 	T getDato();
 	void setExist(bool Valor);
-	bool getExist();
 
 private:
 
 	T dato;
-	bool existe;
 
 };
 
