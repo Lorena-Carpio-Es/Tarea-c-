@@ -4,45 +4,47 @@
 
 
 template <typename T>
-class nodo {
+class Nodo {
 public:
-	nodo();
-	void setDato(T Valor);
-	T getDato();
-	void setExist(bool Valor);
+	Nodo();
+	void SetDato(T Valor);
+	T GetDato();
+	void SetExiste(bool Valor);
+	bool GetExiste();
 
 private:
 
 	T dato;
+	bool existe;
 
 };
 
 template<typename T>
-inline nodo<T>::nodo()
+inline Nodo<T>::nodo()
 {
 	existe = false;
 }
 
 template<typename T>
-inline void nodo<T>::setDato(T Valor)
+inline void Nodo<T>::SetDato(T Valor)
 {
 	dato = Valor;
 }
 
 template<typename T>
-inline T nodo<T>::getDato()
+inline T Nodo<T>::GetDato()
 {
 	return dato;
 }
 
 template<typename T>
-inline void nodo<T>::setExist(bool Valor)
+inline void Nodo<T>::SetExiste(bool Valor)
 {
 	existe = Valor;
 }
 
 template<typename T>
-inline bool nodo<T>::getExist()
+inline bool Nodo<T>::GetExiste()
 {
 	return existe;
 }
